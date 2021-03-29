@@ -6,8 +6,8 @@ using namespace hls;
 typedef ap_axis<32, 1, 1, 1> AP_AXIS;
 typedef stream<AP_AXIS> AXI_STREAM;
 
-const int height = 358;
-const int width = 405;
+const int height = 512;
+const int width = 512;
 
 const int d = 3;
 const int r = 1;
