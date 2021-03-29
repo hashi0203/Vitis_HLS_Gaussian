@@ -1,0 +1,1285 @@
+<profile>
+    <ReportVersion>
+        <Version>2020.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu7ev-ffvc1156-2-e</Part>
+        <TopModelName>gaussian</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>none</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.427</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>262673</Best-caseLatency>
+            <Average-caseLatency>262673</Average-caseLatency>
+            <Worst-caseLatency>262673</Worst-caseLatency>
+            <Best-caseRealTimeLatency>2.627 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>2.627 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>2.627 ms</Worst-caseRealTimeLatency>
+            <Interval-min>262674</Interval-min>
+            <Interval-max>262674</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <buf_x1>
+                <TripCount>2</TripCount>
+                <Latency>2</Latency>
+                <AbsoluteTimeLatency>20</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>1</PipelineDepth>
+            </buf_x1>
+            <buf_x2>
+                <TripCount>512</TripCount>
+                <Latency>512</Latency>
+                <AbsoluteTimeLatency>5120</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>1</PipelineDepth>
+            </buf_x2>
+            <win_y_win_x>
+                <TripCount>4</TripCount>
+                <Latency>5</Latency>
+                <AbsoluteTimeLatency>50</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>2</PipelineDepth>
+            </win_y_win_x>
+            <for_y_for_x>
+                <TripCount>262144</TripCount>
+                <Latency>262146</Latency>
+                <AbsoluteTimeLatency>2621460</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>4</PipelineDepth>
+            </for_y_for_x>
+        </SummaryOfLoopLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>3</BRAM_18K>
+            <FF>976</FF>
+            <LUT>1870</LUT>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>624</BRAM_18K>
+            <DSP>1728</DSP>
+            <FF>460800</FF>
+            <LUT>230400</LUT>
+            <URAM>96</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_AWVALID</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_AWREADY</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_AWADDR</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_WVALID</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_WREADY</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_WDATA</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_WSTRB</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_ARVALID</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_ARREADY</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_ARADDR</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_RVALID</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_RREADY</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_RDATA</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_RRESP</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_BVALID</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_BREADY</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CONTROL_BUS_BRESP</name>
+            <Object>CONTROL_BUS</Object>
+            <Type>return void</Type>
+            <Scope/>
+            <IOProtocol>s_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>gaussian</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>gaussian</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>gaussian</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_strm_TDATA</name>
+            <Object>in_strm_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_strm_TVALID</name>
+            <Object>in_strm_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_strm_TREADY</name>
+            <Object>in_strm_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_strm_TDEST</name>
+            <Object>in_strm_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_strm_TKEEP</name>
+            <Object>in_strm_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_strm_TSTRB</name>
+            <Object>in_strm_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_strm_TUSER</name>
+            <Object>in_strm_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_strm_TLAST</name>
+            <Object>in_strm_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_strm_TID</name>
+            <Object>in_strm_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_strm_TDATA</name>
+            <Object>out_strm_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_strm_TVALID</name>
+            <Object>out_strm_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_strm_TREADY</name>
+            <Object>out_strm_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_strm_TDEST</name>
+            <Object>out_strm_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_strm_TKEEP</name>
+            <Object>out_strm_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_strm_TSTRB</name>
+            <Object>out_strm_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_strm_TUSER</name>
+            <Object>out_strm_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_strm_TLAST</name>
+            <Object>out_strm_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_strm_TID</name>
+            <Object>out_strm_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule>
+            <ModuleName>gaussian</ModuleName>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>gaussian</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.427</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>262673</Best-caseLatency>
+                    <Average-caseLatency>262673</Average-caseLatency>
+                    <Worst-caseLatency>262673</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>2.627 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>2.627 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.627 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>262674</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <buf_x1>
+                        <Name>buf_x1</Name>
+                        <TripCount>2</TripCount>
+                        <Latency>2</Latency>
+                        <AbsoluteTimeLatency>20.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                    </buf_x1>
+                    <buf_x2>
+                        <Name>buf_x2</Name>
+                        <TripCount>512</TripCount>
+                        <Latency>512</Latency>
+                        <AbsoluteTimeLatency>5.120 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                    </buf_x2>
+                    <win_y_win_x>
+                        <Name>win_y_win_x</Name>
+                        <TripCount>4</TripCount>
+                        <Latency>5</Latency>
+                        <AbsoluteTimeLatency>50.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                    </win_y_win_x>
+                    <for_y_for_x>
+                        <Name>for_y_for_x</Name>
+                        <TripCount>262144</TripCount>
+                        <Latency>262146</Latency>
+                        <AbsoluteTimeLatency>2.621 ms</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                    </for_y_for_x>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>3</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <FF>976</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1870</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_AWVALID</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_AWREADY</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_AWADDR</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_WVALID</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_WREADY</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_WDATA</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_WSTRB</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_ARVALID</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_ARREADY</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_ARADDR</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_RVALID</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_RREADY</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_RDATA</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_RRESP</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_BVALID</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_BREADY</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>s_axi_CONTROL_BUS_BRESP</name>
+                    <Object>CONTROL_BUS</Object>
+                    <Type>return void</Type>
+                    <Scope/>
+                    <IOProtocol>s_axi</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>unknown</Attribute>
+                    <CType>unknown</CType>
+                    <HasCtrl>1</HasCtrl>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>gaussian</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst_n</name>
+                    <Object>gaussian</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>interrupt</name>
+                    <Object>gaussian</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>unknown</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_strm_TDATA</name>
+                    <Object>in_strm_V_data_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_strm_TVALID</name>
+                    <Object>in_strm_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_strm_TREADY</name>
+                    <Object>in_strm_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_strm_TDEST</name>
+                    <Object>in_strm_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_strm_TKEEP</name>
+                    <Object>in_strm_V_keep_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_strm_TSTRB</name>
+                    <Object>in_strm_V_strb_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_strm_TUSER</name>
+                    <Object>in_strm_V_user_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_strm_TLAST</name>
+                    <Object>in_strm_V_last_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_strm_TID</name>
+                    <Object>in_strm_V_id_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_strm_TDATA</name>
+                    <Object>out_strm_V_data_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_strm_TVALID</name>
+                    <Object>out_strm_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_strm_TREADY</name>
+                    <Object>out_strm_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_strm_TDEST</name>
+                    <Object>out_strm_V_dest_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_strm_TKEEP</name>
+                    <Object>out_strm_V_keep_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_strm_TSTRB</name>
+                    <Object>out_strm_V_strb_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>4</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_strm_TUSER</name>
+                    <Object>out_strm_V_user_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_strm_TLAST</name>
+                    <Object>out_strm_V_last_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_strm_TID</name>
+                    <Object>out_strm_V_id_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <Args>
+        <Arg ArgName="in_strm" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 1, 1, 1&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="in_strm" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="out_strm" index="1" direction="out" srcType="stream&lt;hls::axis&lt;ap_int&lt;32&gt;, 1, 1, 1&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="out_strm" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_CONTROL_BUS:in_strm:out_strm</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="in_strm" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="32" portPrefix="in_strm_">
+            <ports>
+                <port>in_strm_TDATA</port>
+                <port>in_strm_TDEST</port>
+                <port>in_strm_TID</port>
+                <port>in_strm_TKEEP</port>
+                <port>in_strm_TLAST</port>
+                <port>in_strm_TREADY</port>
+                <port>in_strm_TSTRB</port>
+                <port>in_strm_TUSER</port>
+                <port>in_strm_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="in_strm"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="out_strm" type="axi4stream" busTypeName="axis" mode="master" dataWidth="32" portPrefix="out_strm_">
+            <ports>
+                <port>out_strm_TDATA</port>
+                <port>out_strm_TDEST</port>
+                <port>out_strm_TID</port>
+                <port>out_strm_TKEEP</port>
+                <port>out_strm_TLAST</port>
+                <port>out_strm_TREADY</port>
+                <port>out_strm_TSTRB</port>
+                <port>out_strm_TUSER</port>
+                <port>out_strm_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="out_strm"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="s_axi_CONTROL_BUS" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="4" portPrefix="s_axi_CONTROL_BUS_" paramPrefix="C_S_AXI_CONTROL_BUS_">
+            <ports>
+                <port>s_axi_CONTROL_BUS_ARADDR</port>
+                <port>s_axi_CONTROL_BUS_ARREADY</port>
+                <port>s_axi_CONTROL_BUS_ARVALID</port>
+                <port>s_axi_CONTROL_BUS_AWADDR</port>
+                <port>s_axi_CONTROL_BUS_AWREADY</port>
+                <port>s_axi_CONTROL_BUS_AWVALID</port>
+                <port>s_axi_CONTROL_BUS_BREADY</port>
+                <port>s_axi_CONTROL_BUS_BRESP</port>
+                <port>s_axi_CONTROL_BUS_BVALID</port>
+                <port>s_axi_CONTROL_BUS_RDATA</port>
+                <port>s_axi_CONTROL_BUS_RREADY</port>
+                <port>s_axi_CONTROL_BUS_RRESP</port>
+                <port>s_axi_CONTROL_BUS_RVALID</port>
+                <port>s_axi_CONTROL_BUS_WDATA</port>
+                <port>s_axi_CONTROL_BUS_WREADY</port>
+                <port>s_axi_CONTROL_BUS_WSTRB</port>
+                <port>s_axi_CONTROL_BUS_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" resetValue="0x0" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" resetValue="0" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" resetValue="0" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" resetValue="0" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" resetValue="0" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" resetValue="0" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="24" name="RESERVED_2" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" resetValue="0x0" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" resetValue="0" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" resetValue="0x0" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" resetValue="0" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" resetValue="0" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" resetValue="0x0" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" resetValue="0" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 input interrupt, 1 = Channel 0 input interrup"/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" resetValue="0" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 input interrupt, 1 = Channel 1 input interrup"/>
+                        <field offset="2" width="30" name="RESERVED" access="R" resetValue="0" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE">
+                <table>
+                    <keys size="3">Interface, Data Width, Address Width</keys>
+                    <column name="s_axi_CONTROL_BUS">32, 4</column>
+                </table>
+            </item>
+            <item name="AXIS">
+                <table>
+                    <keys size="11">Interface, Register Mode, TDATA, TDEST, TID, TKEEP, TLAST, TREADY, TSTRB, TUSER, TVALID</keys>
+                    <column name="in_strm">both, 32, 1, 1, 4, 1, 1, 4, 1, 1</column>
+                    <column name="out_strm">both, 32, 1, 1, 4, 1, 1, 4, 1, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="interrupt">interrupt, interrupt</column>
+                    <column name="ap_ctrl">ap_ctrl_hs</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="in_strm">in, stream&lt;hls::axis&lt;ap_int&lt;32&gt; 1 1 1&gt; 0&gt;&amp;</column>
+                    <column name="out_strm">out, stream&lt;hls::axis&lt;ap_int&lt;32&gt; 1 1 1&gt; 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Name, HW Type</keys>
+                    <column name="in_strm">in_strm, interface</column>
+                    <column name="out_strm">out_strm, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+
