@@ -1,9 +1,8 @@
-#include <stdio.h>
+#include "gaussian.h"
 #include "opencv2/opencv.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgcodecs/imgcodecs.hpp"
-#include "gaussian.h"
 
 using namespace std;
 
@@ -42,17 +41,17 @@ int main() {
             output = out_strm.read();
             if (py == height-1 && px == width-1 && output.last != 1) {
                 // 最後の出力なのに last が 1 でないとき
-                printf("ERROR last is not equal to 1\n");
+                cout << "ERROR last is not equal to 1" << endl;
                 return 1;
             }
             if(output.data != dst[py][px]){
                 // 結果が一致しない時
-                printf("ERROR HW and SW results mismatch\n");
+                cout << "ERROR HW and SW results mismatch" << endl;
                 return 1;
             }
         }
     }
-    printf("Success HW and SW results match\n");
+    cout << "Success HW and SW results match" << endl;
     return 0;
 }
 

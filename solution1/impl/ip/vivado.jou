@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Mar 29 19:53:15 2021
-# Process ID: 3223901
+# Start of session at: Wed Mar 31 17:52:18 2021
+# Process ID: 893606
 # Current directory: /home/nhsmt1123/grad_thesis/qiita/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/nhsmt1123/grad_thesis/qiita/solution1/impl/ip/vivado.log

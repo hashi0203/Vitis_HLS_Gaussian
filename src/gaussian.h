@@ -3,7 +3,7 @@
 #include <ap_axi_sdata.h>
 
 using namespace hls;
-typedef ap_axis<32, 1, 1, 1> AP_AXIS;
+typedef ap_axis<32, 0, 0, 0> AP_AXIS;
 typedef stream<AP_AXIS> AXI_STREAM;
 
 const int height = 512; // 画像の高さ

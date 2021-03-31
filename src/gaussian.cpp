@@ -16,14 +16,14 @@ void gaussian(AXI_STREAM &in_strm, AXI_STREAM &out_strm) {
     AP_AXIS pix;
     // width * r + r + 1 個入力を読んで，linebuf と window を初期化する
     buf_x1: for (int px = width - r - 1; px < width; px++) {
-#pragma HLS PIPELINE
+#pragma HLS PIPELINE II=1
         pix = in_strm.read();
         linebuf[r-1][px] = pix.data;
     }
 
     buf_y: for (int py = r; py < d - 1; py++) {
         buf_x2: for (int px = 0; px < width; px++) {
-#pragma HLS PIPELINE
+#pragma HLS PIPELINE II=1
             pix = in_strm.read();
             linebuf[py][px] = pix.data;
         }
@@ -31,7 +31,7 @@ void gaussian(AXI_STREAM &in_strm, AXI_STREAM &out_strm) {
 
     win_y: for (int wy = r; wy < d; wy++) {
         win_x: for (int wx = r; wx < d; wx++) {
-#pragma HLS PIPELINE
+#pragma HLS PIPELINE II=1
             window[wy][wx] = linebuf[wy-1][wx+width-d];
         }
     }
@@ -41,9 +41,6 @@ void gaussian(AXI_STREAM &in_strm, AXI_STREAM &out_strm) {
     AP_AXIS val;
     val.keep = pix.keep;
     val.strb = pix.strb;
-    val.user = pix.user;
-    val.id = pix.id;
-    val.dest = pix.dest;
     val.last = 0; // 最後のビットの時だけ 1 で，その他の時は 0 にする
 
     int read_cnt = width * r + r + 1; // 何ビット読んだかを保存

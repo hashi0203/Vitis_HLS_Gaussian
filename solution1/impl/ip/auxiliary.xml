@@ -4,17 +4,11 @@
   <xd:arg xd:name="in_strm.data" xd:originalName="in_strm" xd:direction="in" xd:interfaceRef="in_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:arg xd:name="in_strm.keep" xd:originalName="in_strm" xd:direction="in" xd:interfaceRef="in_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:arg xd:name="in_strm.strb" xd:originalName="in_strm" xd:direction="in" xd:interfaceRef="in_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
-  <xd:arg xd:name="in_strm.user" xd:originalName="in_strm" xd:direction="in" xd:interfaceRef="in_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:arg xd:name="in_strm.last" xd:originalName="in_strm" xd:direction="in" xd:interfaceRef="in_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
-  <xd:arg xd:name="in_strm.id" xd:originalName="in_strm" xd:direction="in" xd:interfaceRef="in_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
-  <xd:arg xd:name="in_strm.dest" xd:originalName="in_strm" xd:direction="in" xd:interfaceRef="in_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:arg xd:name="out_strm.data" xd:originalName="out_strm" xd:direction="out" xd:interfaceRef="out_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:arg xd:name="out_strm.keep" xd:originalName="out_strm" xd:direction="out" xd:interfaceRef="out_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:arg xd:name="out_strm.strb" xd:originalName="out_strm" xd:direction="out" xd:interfaceRef="out_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
-  <xd:arg xd:name="out_strm.user" xd:originalName="out_strm" xd:direction="out" xd:interfaceRef="out_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:arg xd:name="out_strm.last" xd:originalName="out_strm" xd:direction="out" xd:interfaceRef="out_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
-  <xd:arg xd:name="out_strm.id" xd:originalName="out_strm" xd:direction="out" xd:interfaceRef="out_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
-  <xd:arg xd:name="out_strm.dest" xd:originalName="out_strm" xd:direction="out" xd:interfaceRef="out_strm" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:latencyEstimates xd:best-case="262673" xd:worst-case="262673" xd:average-case="262673"/>
-  <xd:resourceEstimates xd:LUT="1870" xd:FF="976" xd:BRAM="3" xd:DSP="0"/>
+  <xd:resourceEstimates xd:LUT="1870" xd:FF="973" xd:BRAM="3" xd:DSP="0"/>
 </xd:acceleratorMap>

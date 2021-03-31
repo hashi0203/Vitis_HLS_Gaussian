@@ -271,10 +271,10 @@
         </spirit:portMap>
         <spirit:portMap>
           <spirit:logicalPort>
-            <spirit:name>TDEST</spirit:name>
+            <spirit:name>TLAST</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>in_strm_TDEST</spirit:name>
+            <spirit:name>in_strm_TLAST</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -293,30 +293,6 @@
             <spirit:name>in_strm_TSTRB</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TUSER</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>in_strm_TUSER</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TLAST</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>in_strm_TLAST</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TID</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>in_strm_TID</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
       </spirit:portMaps>
       <spirit:parameters>
         <spirit:parameter>
@@ -324,16 +300,8 @@
           <spirit:value spirit:id="BUSIFPARAM_VALUE.IN_STRM.TDATA_NUM_BYTES">4</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
-          <spirit:name>TDEST_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.IN_STRM.TDEST_WIDTH">1</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>TID_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.IN_STRM.TID_WIDTH">1</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.IN_STRM.TUSER_WIDTH">1</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.IN_STRM.TUSER_WIDTH">0</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>LAYERED_METADATA</spirit:name>
@@ -373,10 +341,10 @@
         </spirit:portMap>
         <spirit:portMap>
           <spirit:logicalPort>
-            <spirit:name>TDEST</spirit:name>
+            <spirit:name>TLAST</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>out_strm_TDEST</spirit:name>
+            <spirit:name>out_strm_TLAST</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -395,30 +363,6 @@
             <spirit:name>out_strm_TSTRB</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TUSER</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>out_strm_TUSER</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TLAST</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>out_strm_TLAST</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>TID</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>out_strm_TID</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
       </spirit:portMaps>
       <spirit:parameters>
         <spirit:parameter>
@@ -426,16 +370,8 @@
           <spirit:value spirit:id="BUSIFPARAM_VALUE.OUT_STRM.TDATA_NUM_BYTES">4</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
-          <spirit:name>TDEST_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.OUT_STRM.TDEST_WIDTH">1</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>TID_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.OUT_STRM.TID_WIDTH">1</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.OUT_STRM.TUSER_WIDTH">1</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.OUT_STRM.TUSER_WIDTH">0</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>LAYERED_METADATA</spirit:name>
@@ -722,7 +658,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2304ff14</spirit:value>
+            <spirit:value>6c1f544e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -738,7 +674,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>556a022c</spirit:value>
+            <spirit:value>98a978aa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -754,7 +690,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1effb6fc</spirit:value>
+            <spirit:value>5913b330</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -770,7 +706,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1d06eacd</spirit:value>
+            <spirit:value>afa5b343</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -784,7 +720,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>601968ec</spirit:value>
+            <spirit:value>8e536daf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1186,7 +1122,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>in_strm_TDEST</spirit:name>
+        <spirit:name>in_strm_TLAST</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -1246,66 +1182,6 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>in_strm_TUSER</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">0</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-          <spirit:driver>
-            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
-          </spirit:driver>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>in_strm_TLAST</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">0</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-          <spirit:driver>
-            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
-          </spirit:driver>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>in_strm_TID</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">0</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-          <spirit:driver>
-            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
-          </spirit:driver>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
         <spirit:name>out_strm_TVALID</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
@@ -1349,7 +1225,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>out_strm_TDEST</spirit:name>
+        <spirit:name>out_strm_TLAST</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -1399,57 +1275,6 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
-      <spirit:port>
-        <spirit:name>out_strm_TUSER</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">0</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>out_strm_TLAST</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">0</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>out_strm_TID</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">0</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
     </spirit:ports>
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
@@ -1486,6 +1311,10 @@
         <spirit:name>hdl/verilog/gaussian_regslice_both.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/gaussian.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
@@ -1506,6 +1335,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/gaussian_regslice_both.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/gaussian.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1532,7 +1366,11 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/gaussian_regslice_both.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_463ca652</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/gaussian.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_2660d295</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1554,6 +1392,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/gaussian_regslice_both.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/gaussian.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1582,6 +1425,10 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>drivers/gaussian_v1_0/src/xgaussian_hw.h</spirit:name>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/gaussian_v1_0/src/xgaussian_linux.c</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -1665,8 +1512,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Gaussian</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2103291953</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-03-29T10:53:25Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2103311752</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-03-31T08:52:28Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1674,10 +1521,10 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="63b85c84"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8451b407"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="df45e9ab"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a5f9c239"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="7ede6dee"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0cb5e4b4"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="54aeb2a8"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="29db3f49"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="f36f382e"/>
     </xilinx:packagingInfo>

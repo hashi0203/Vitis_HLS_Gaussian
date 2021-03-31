@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'gaussian'
 ================================================================
 + General Information: 
-    * Date:           Mon Mar 29 19:44:08 2021
+    * Date:           Wed Mar 31 17:51:48 2021
     * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
     * Project:        qiita
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,7 +19,7 @@
     |     Modules    | Issue|       | Latency |  Latency  | Iteration|         |  Trip  |          |         |    |           |            |     |
     |     & Loops    | Type | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|  BRAM   | DSP|     FF    |     LUT    | URAM|
     +----------------+------+-------+---------+-----------+----------+---------+--------+----------+---------+----+-----------+------------+-----+
-    |+ gaussian      |     -|  -0.87|   262673|  2.627e+06|         -|   262674|       -|        no|  3 (~0%)|   -|  976 (~0%)|  1870 (~0%)|    -|
+    |+ gaussian      |     -|  -0.87|   262673|  2.627e+06|         -|   262674|       -|        no|  3 (~0%)|   -|  973 (~0%)|  1870 (~0%)|    -|
     | o buf_x1       |     -|  -7.30|        2|     20.000|         1|        1|       2|       yes|        -|   -|          -|           -|    -|
     | o buf_x2       |     -|  -7.30|      512|  5.120e+03|         1|        1|     512|       yes|        -|   -|          -|           -|    -|
     | o win_y_win_x  |     -|  -7.30|        5|     50.000|         2|        1|       4|       yes|        -|   -|          -|           -|    -|
