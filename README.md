@@ -36,6 +36,7 @@ FPGA 上で回路を動かすための流れをまず簡単に説明します．
 
 1. [コードを書く](https://qiita.com/hashi0203/items/e875bbc7be94993bb141)
 2. [シミュレーションをする](https://qiita.com/hashi0203/items/62fbbf768e061c5ede8b)
+3. [Vivado で回路を組む](https://qiita.com/hashi0203/items/96bbac58173cf8f718b9)
 
 
 ## 各ディレクトリの中身について
