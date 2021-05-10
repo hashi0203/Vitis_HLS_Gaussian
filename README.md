@@ -34,10 +34,10 @@ FPGA 上で回路を動かすための流れをまず簡単に説明します．
 
 詳しい説明は以下の Qiita の記事に書いているのでご覧ください．
 
-1. [コードを書く](https://qiita.com/hashi0203/items/e875bbc7be94993bb141)
-2. [シミュレーションをする](https://qiita.com/hashi0203/items/62fbbf768e061c5ede8b)
-3. [Vivado で回路を組む](https://qiita.com/hashi0203/items/96bbac58173cf8f718b9)
-4. [PYNQ を使って実機で動かす](https://qiita.com/hashi0203/items/771fa8452e320a9e389d)
+1. [コードを書く](https://blog.n-hassy.info/2021/05/vitis-hls-to-fpga-1/)
+2. [シミュレーションをする](https://blog.n-hassy.info/2021/05/vitis-hls-to-fpga-2/)
+3. [Vivado で回路を組む](https://blog.n-hassy.info/2021/05/vitis-hls-to-fpga-3/)
+4. [PYNQ を使って実機で動かす](https://blog.n-hassy.info/2021/05/vitis-hls-to-fpga-4/)
 
 
 ## 各ディレクトリの中身について
